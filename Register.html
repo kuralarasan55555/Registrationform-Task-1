@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>
+            REGISTRATION FORM
+        </title>
+
+    </head>
+    <body style="background-color: lightgreen;">
+        <fieldset style="text-align: center;">
+            <legend> <h1 style="text-align: center;">REGISTRATION FORM</h1></legend>
+        <form method="get"> 
+            <p>
+            <label for="name">Name:</label>
+            <input type="text" maxlength="l5" id="name" placeholder="your name" required>
+            </p>
+            
+            
+            <p>
+            <label for="email" >Email: </label>
+            <input type="email" placeholder="your email" id="email" required>
+            </p>
+            
+            
+             <label for="pass">Password:</label> 
+            <input type="password" placeholder="your password" id="pass" minlength="6" required>
+        
+
+            <p>
+                <label>Gender: </label>
+                <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label>
+                <input type="radio" name="gender" id="others" value="others"><label for="others">Others</label>
+            </p>
+
+            <p>
+                <label for="dob_">DOB:</label>
+                <input type="date" name="dob" id="dob_" required>
+            </p>
+
+            <p>
+                <label for="country">Country:</label>
+                <select name="country" id="country" required>
+                    <option value="">Select a region</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Pakisthan">Pakisthan</option>
+                </select>
+            </p>
+
+            <p>
+            <label for="lang">Language:</label>
+            <select name="language" id="lang" required>
+                <option value="">Select a language</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Malayalam">Malayalam</option>
+                <option value="English">English</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Telungu">Telungu</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="code">Zip Code:</label>
+                <input type="number" id="code" name="zipcode" placeholder="Your Zip code" min="10000" minlength="5" required>
+            </p>
+            
+            <p>
+                <label for="abt">About:</label>
+                <textarea placeholder="Write about yorself..." col="30"  id="abt" name="abt" required></textarea>
+            </p>
+
+            <p style="text-align: center;">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Register">
+            </p>
+
+        </form>
+    </fieldset>  
+    </body>
+</html>
